@@ -1,0 +1,176 @@
+/* Global view / Desktop view */
+body{
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    /* width: 100%; */
+    color: white;
+    background-color: #ebebeb;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    
+    max-width: 1024px ;
+    min-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+.header-container{
+    background-color: rgb(63, 63, 63);
+    min-height: 100px;
+    width: 100%;
+    /* margin-bottom: 40px; */
+    font-size: 20px;
+    position: fixed;
+}
+header{
+    max-width: 1024px;
+    /* background-color: blue; */
+    margin: 0 auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.highlight{
+    font-weight: 800;
+    color: mediumpurple;
+    font-size: 25px;
+}
+.mybutton{
+    padding: 10px 25px;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.mybutton:hover{
+    color: orange;
+    border: 1px solid orange;
+    
+}
+.col{
+    /* background-color: burlywood;
+    min-height: 200px; */
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: aqua;
+}
+/* h1{
+    font-size: 100%;
+} */
+.col p{
+    color: white;
+    font-size: 0.857rem;
+    padding: 10px 20px;
+}
+.col p::first-line{
+    font-weight: 700;
+}
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+.mob-wrapper{
+    display: none;
+}
+.burger-menu{
+    width:50px;
+}
+/* Tablet view */
+@media (max-width:768px){
+    .col{
+        width: 45%;
+    }
+    .hide-desktop-only{
+        display: block;
+    }
+    /* comment header because i put toggle menu button */
+    /* header{
+        display: block;
+        text-align: center ;
+    } */
+    nav{
+        display: none;
+    }
+    nav a{
+        display: block;
+    }
+    .mybutton{
+        margin-left: 0px;
+    }
+    .logo{
+        padding: 40px 0;
+    }
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 40px;
+    }
+    .mob-wrapper{
+        display: block;
+        margin-right: 15px;
+        /* padding-right: 10px; */
+    }
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+
+    }
+    .navbutton{
+        display: block;
+       background-color: mediumpurple;
+       padding: 15px 40px;
+       border-bottom: 2px solid black ;
+       text-align: center;
+       margin-left:-70px ;
+    }
+    .burger-menu{
+        width: 30px;
+        font-size: 40px;
+        color: orange;
+    }
+
+}
+
+
+
+
+/* Mobile View */
+@media (max-width:400px){
+    .col{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .burger-menu{
+        width: 30px;
+        font-size: 30px;
+        
+    }
+    /* place if early */
+    /* header{
+        display: block;
+        text-align: center ;
+    }
+    nav a{
+        display: block;
+    }
+    .mybutton{
+        margin-left: 0px;
+    }
+    .logo{
+        padding: 40px 0;
+    } */
+}
